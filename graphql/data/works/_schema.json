@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "work": {
+      "$id": "#work",
+      "type": "object",
+      "properties": {
+        "id": { "type": "number", "minimum": 0, "multipleOf": 1 },
+        "company": { "type": "string" },
+        "position": { "type": "string" },
+        "website": { "type": "string", "format": "uri-template" },
+        "date": {
+          "type": "object",
+          "anyOf": [
+            { "start": { "type": "string", "format": "date" } },
+            { "end": { "type": "string", "format": "date" } }
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "body": {
+          "type": "string"
+        },
+        "tags": { "$ref": "data/definition#tags" },
+        "gallery": { "$ref": "data/definition#gallery" },
+        "action": { "$ref": "data/definition#action" },
+        "highlights": { "$ref": "data/definition#highlights" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "type": "object",
+  "properties": {
+    "en": {
+      "allOf": [
+        { "$ref": "#work" },
+        {
+          "required": ["id", "company", "position", "date", "summary", "highlights", "action"]
+        }
+      ]
+    }
+  },
+  "additionalProperties": { "$ref": "#work" },
+  "required": ["en"]
+}

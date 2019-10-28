@@ -1,0 +1,53 @@
+{
+  "$id": "data/definition",
+  "definitions": {
+    "action": {
+      "$id": "#action",
+      "type": "object",
+      "properties": {
+        "created": { "type": "string", "format": "date-time" },
+        "updated": { "type": "string", "format": "date-time" }
+      },
+      "required": ["created", "updated"]
+    },
+    "gallery": {
+      "$id": "#gallery",
+      "type": "object",
+      "properties": {
+        "banner": {
+          "type": "string",
+          "format": "uri-template"
+        },
+        "list": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri-template"
+          }
+        }
+      }
+    },
+    "tags": {
+      "$id": "#tags",
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z]+$"
+      },
+      "patternProperties": {
+        "^[a-z]+$": { "type": "string", "minLength": 3, "maxLength": 30 }
+      },
+      "maxProperties": 7
+    },
+    "highlights": {
+      "$id": "#highlights",
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[0-9]+$"
+      },
+      "patternProperties": {
+        "^[0-9]+$": { "type": "string", "minLength": 15, "maxLength": 70 }
+      },
+      "minProperties": 1
+    }
+  }
+}

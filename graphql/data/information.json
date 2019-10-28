@@ -1,0 +1,70 @@
+{
+  "en": {
+    "id": "net",
+    "image": "https://res.cloudinary.com/kamontat-net/image/upload/v1551185782/x9wobrfkcsnstxsftfyd.jpg",
+    "name": {
+      "first": "Kamontat",
+      "last": "Chantrachirathumrong",
+      "short": "net"
+    },
+    "email": "hello@kamontat.net",
+    "mobile": "+66851811177",
+    "birthday": "1996-11-08",
+    "definition": "Software Engineer at Agoda Services Co.,Ltd.",
+    "summary": "3+ years of experience in website development, Infrastructure, and tester. Always work under pressure and time limitation. Strong management skill, including communication skill in both English and Mandarin Chinese.",
+    "address": {
+      "name": "8/32 Soi Phahon Yothin 34 Yaek 2",
+      "name2": "Senanikom, Chatuchak",
+      "city": "Bangkok",
+      "country": "Thailand",
+      "code": "10900"
+    },
+    "social": {
+      "fb": {
+        "network": "facebook",
+        "username": "kamontatc",
+        "url": "https://facebook.com/kamontatc",
+        "action": {
+          "created": "2019-02-26T20:01:07.054261+07:00",
+          "updated": "2019-03-14T22:20:58.812089+07:00"
+        }
+      },
+      "gh": {
+        "network": "github",
+        "username": "kamontat",
+        "url": "https://github.com/kamontat",
+        "action": {
+          "created": "2019-02-26T20:01:31.102459+07:00",
+          "updated": "2019-02-26T20:01:31.102504+07:00"
+        }
+      },
+      "tw": {
+        "network": "twitter",
+        "username": "kamontatc",
+        "url": "https://twitter.com/kamontatc",
+        "action": {
+          "created": "2019-02-26T20:31:56.042350+07:00",
+          "updated": "2019-02-26T20:31:56.042401+07:00"
+        }
+      }
+    },
+    "action": {
+      "created": "2019-02-26T19:56:22.697918+07:00",
+      "updated": "2019-04-09T19:31:49.521632+07:00"
+    }
+  },
+  "th": {
+    "name": {
+      "first": "กมนทัต",
+      "last": "จันทราจีระธำรงค์",
+      "short": "เน็ต"
+    }
+  },
+  "cn": {
+    "name": {
+      "first": "lin",
+      "last": "nei",
+      "short": "nei"
+    }
+  }
+}

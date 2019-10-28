@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+
+  "definitions": {
+    "skill": {
+      "$id": "#skill",
+      "type": "object",
+      "properties": {
+        "action": { "$ref": "data/definition#action" }
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "en": {
+      "allOf": [{ "$ref": "#skill" }, { "required": ["action"] }]
+    }
+  },
+  "additionalProperties": { "$ref": "#skill" },
+  "required": ["en"]
+}

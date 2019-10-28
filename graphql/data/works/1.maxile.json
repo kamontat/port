@@ -1,0 +1,32 @@
+{
+  "en": {
+    "id": 1,
+    "company": "Maxile Co., Ltd.",
+    "position": "Mobile developer",
+    "date": {
+      "start": "2016-10-12",
+      "end": "2016-11-16"
+    },
+    "highlights": {
+      "1": "Implemented new features on Android application",
+      "2": "Implemented by Angular Framework and Ionic",
+      "3": "Wrote new test cases"
+    },
+    "summary": "Responsibility for implementing the Android application using angular 1 and Ionic as well as write the test case on recently added features.",
+    "tags": {
+      "web": "Website",
+      "ang": "Angular"
+    },
+    "action": {
+      "created": "2019-03-03T00:38:53.155027+07:00",
+      "updated": "2019-03-03T21:03:27.558039+07:00"
+    }
+  },
+  "th": {
+    "company": "บริษัท แมกซ์ไซอัล จำกัด",
+    "position": "นักพัฒนาแอพพลิเคชั่นในโทรศัพท์มือถือ",
+    "tags": {
+      "web": "เว็บไซต์"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "en": {
+    "institution": "Bangkok Christian Collage",
+    "area": "Science and Mathematics Degree",
+    "type": "senior",
+    "evaluate": 3.1,
+    "date": {
+      "start": "2009-05-13",
+      "end": "2015-03-31"
+    },
+    "action": {
+      "created": "2019-02-26T22:30:49.090761+07:00",
+      "updated": "2019-03-02T01:05:20.489280+07:00"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+
+  "definitions": {
+    "education": {
+      "$id": "#education",
+      "type": "object",
+      "properties": {
+        "institution": { "type": "string" },
+        "area": { "type": "string" },
+        "type": {
+          "type": "string",
+          "enum": [
+            "junior",
+            "senior",
+            "high-vocational",
+            "technical-certificate",
+            "non-formal",
+            "online",
+            "bachelor",
+            "master",
+            "phd"
+          ]
+        },
+        "date": {
+          "type": "object",
+          "anyOf": [
+            { "start": { "type": "string", "format": "date" } },
+            { "end": { "type": "string", "format": "date" } }
+          ]
+        },
+        "evaluate": {
+          "oneOf": [{ "type": "string", "const": "pass" }, { "type": "number", "multipleOf": 0.01 }]
+        },
+        "certificate": {
+          "type": "string",
+          "format": "uri-template"
+        },
+        "action": { "$ref": "data/definition#action" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "type": "object",
+  "properties": {
+    "en": {
+      "allOf": [{ "$ref": "#education" }, { "required": ["institution", "area", "type", "evaluate", "action"] }]
+    }
+  },
+  "additionalProperties": { "$ref": "#education" },
+  "required": ["en"]
+}

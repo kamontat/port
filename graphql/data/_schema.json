@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+
+  "definitions": {
+    "information": {
+      "$id": "#information",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "minLength": 3, "maxLength": 15 },
+        "name": {
+          "type": "object",
+          "properties": {
+            "first": { "type": "string" },
+            "last": { "type": "string" },
+            "short": { "type": "string" }
+          },
+          "required": ["first", "last"],
+          "additionalProperties": false
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "birthday": {
+          "type": "string",
+          "format": "date"
+        },
+        "mobile": {
+          "type": "string",
+          "pattern": "^\\+[0-9]+"
+        },
+        "address": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "name2": { "type": "string" },
+            "city": { "type": "string" },
+            "country": { "type": "string" },
+            "code": { "type": "string", "pattern": "^[0-9]+$" }
+          },
+          "required": ["name", "city", "country", "code"]
+        },
+        "definition": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "summary": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "image": {
+          "type": "string",
+          "format": "uri-template"
+        },
+        "social": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[a-z]+$"
+          },
+          "patternProperties": {
+            "^[a-z]+$": {
+              "type": "object",
+              "properties": {
+                "network": { "type": "string" },
+                "username": { "type": "string" },
+                "url": { "type": "string", "format": "uri-template" },
+                "action": { "$ref": "data/definition#action" }
+              },
+              "required": ["network", "username", "url", "action"]
+            }
+          }
+        },
+        "action": { "$ref": "data/definition#action" }
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "en": {
+      "allOf": [
+        { "$ref": "#information" },
+        { "required": ["id", "name", "email", "definition", "summary", "image", "action"] }
+      ]
+    }
+  },
+  "additionalProperties": { "$ref": "#information" },
+  "required": ["en"]
+}

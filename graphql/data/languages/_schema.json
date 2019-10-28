@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+
+  "definitions": {
+    "language": {
+      "$id": "#language",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "proficiency": {
+          "type": "string",
+          "enum": ["native", "full", "professional", "limit", "elementary"]
+        },
+        "action": { "$ref": "data/definition#action" }
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "en": {
+      "allOf": [{ "$ref": "#language" }, { "required": ["action"] }]
+    }
+  },
+  "additionalProperties": { "$ref": "#language" },
+  "required": ["en"]
+}
