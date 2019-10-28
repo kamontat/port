@@ -1,0 +1,24 @@
+# Production context:
+# All deploys from the main repository branch
+# will inherit these settings.
+[context.production]
+  command = "yarn build"
+  publish = "dist"
+
+# Branch deploy context:
+# All deploys that are not from a pull/merge request
+# or from the production branch will inherit these settings.
+[context.branch-deploy]
+  command = "yarn build"
+  publish = "dist"
+
+# Specific branch context:
+# Deploys from this branch will take these settings
+# and override their current ones.
+[context.feature]
+  command = "yarn build"
+  publish = "dist"
+
+[context."features/branch"]
+  command = "yarn build"
+  publish = "dist"

@@ -1,0 +1,43 @@
+version: 4
+commit:
+  keys:
+    - type: feat
+      value: Introducing new features.
+    - type: impr
+      value: Improving user experience / usability / reliablity.
+    - type: perf
+      value: A code change that improves performance.
+    - type: doc
+      value: Documentation
+    - type: fix
+      value: Fixing a bug.
+    - type: refac
+      value: A code change that neither fixes a bug nor adds a feature.
+    - type: chore
+      value: Other changes that don't modify src or test files.
+  scopes:
+    - type: core
+      value: Core program of website
+    - type: ui
+      value: User interface
+    - type: script
+      value: helper script
+    - type: test
+      value: Relevant to ava testing framework
+    - type: ci
+      value: CI/CD setup
+    - type: deps
+      value: Dependencies
+    - type: release
+      value: For release new packages
+branch:
+  keys:
+    - type: feat
+      value: Introducing new features or project enhancement.
+    - type: impr
+      value: Improving user experience / usability / performance.
+    - type: fix
+      value: Fixing a bug.
+  titles:
+    - type: config
+      value: Configuration
