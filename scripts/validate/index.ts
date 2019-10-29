@@ -28,7 +28,7 @@ export default class Validate {
   }
 
   check(path: string) {
-    process.stdout.write(`            at file:${basename(path).padEnd(25)} `);
+    process.stdout.write(`            at ${basename(path).padEnd(25)} `);
     const data = require(path);
     const valid = this.validate(data);
     if (!valid) {

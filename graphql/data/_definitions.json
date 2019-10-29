@@ -1,6 +1,14 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "data/definition",
   "definitions": {
+    "body": {
+      "$id": "#body",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "action": {
       "$id": "#action",
       "type": "object",
@@ -8,7 +16,8 @@
         "created": { "type": "string", "format": "date-time" },
         "updated": { "type": "string", "format": "date-time" }
       },
-      "required": ["created", "updated"]
+      "required": ["created", "updated"],
+      "additionalProperties": false
     },
     "gallery": {
       "$id": "#gallery",
@@ -25,7 +34,8 @@
             "format": "uri-template"
           }
         }
-      }
+      },
+      "additionalProperties": false
     },
     "tags": {
       "$id": "#tags",
@@ -45,14 +55,19 @@
         "pattern": "^[0-9]+$"
       },
       "patternProperties": {
-        "^[0-9]+$": { "type": "string", "minLength": 15, "maxLength": 70 }
+        "^[0-9]+$": { "type": "string", "minLength": 15, "maxLength": 100 }
       },
       "minProperties": 1
     },
     "start-end-date": {
       "$id": "#start-end-date",
       "type": "object",
-      "anyOf": [{ "start": { "type": "string", "format": "date" } }, { "end": { "type": "string", "format": "date" } }]
+      "properties": {
+        "start": { "type": "string", "format": "date" },
+        "end": { "type": "string", "format": "date" }
+      },
+      "anyOf": [{ "start": { "type": "string", "format": "date" } }, { "end": { "type": "string", "format": "date" } }],
+      "additionalProperties": false
     }
   }
 }

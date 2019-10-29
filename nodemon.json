@@ -1,0 +1,6 @@
+{
+  "verbose": true,
+  "watch": ["graphql"],
+  "ignore": ["src/**/*.spec.ts"],
+  "exec": "yarn graphql"
+}

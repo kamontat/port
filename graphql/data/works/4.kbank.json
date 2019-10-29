@@ -1,0 +1,38 @@
+{
+  "en": {
+    "id": 4,
+    "company": "Kasikorn Bank",
+    "position": "Financial Disruptor",
+    "website": "https://www.facebook.com/kcapstone",
+    "date": {
+      "start": "2018-06-04",
+      "end": "2018-07-26"
+    },
+    "summary": "This program is a redefine internship program from Bank in Thailand. This is the first program for bachelor student to learn, play and create the unique and quality to disrupt the old ways of Bank.",
+    "tags": {
+      "sw": "Software",
+      "android": "Android",
+      "ios": "iOS",
+      "su": "Startup",
+      "flu": "Flutter",
+      "vue": "VueJS",
+      "bus": "Business"
+    },
+    "highlights": {
+      "1": "Designed bank disruption idea",
+      "2": "Empathize customer and survey the real field",
+      "3": "Implemented Prototype and Application"
+    },
+    "gallery": {
+      "banner": "https://res.cloudinary.com/kamontat-net/image/upload/v1553353659/s9ngwxkobe4j1jqubjfy.jpg",
+      "list": ["https://res.cloudinary.com/kamontat-net/image/upload/v1551622320/hwk2sn1mryaqhahpongq.jpg"]
+    },
+    "action": {
+      "created": "2019-03-03T21:12:58.890961+07:00",
+      "updated": "2019-03-23T22:07:37.377395+07:00"
+    }
+  },
+  "th": {
+    "company": "ธนาคารกสิกรไทย"
+  }
+}

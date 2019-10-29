@@ -13,7 +13,7 @@ export default gql`
     website: String
     date: WorkDate
     summary: String!
-    body: String
+    body: [String]
     gallery: Gallery
     tags: [String]
     highlights: [String]

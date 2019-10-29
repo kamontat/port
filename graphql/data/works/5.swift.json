@@ -1,0 +1,28 @@
+{
+  "en": {
+    "id": 5,
+    "company": "Bern University of Applied Sciences, Switzerland",
+    "position": "Internship Trainee",
+    "website": "https://www.bfh.ch",
+    "date": {
+      "start": "2018-08-27",
+      "end": "2018-12-21"
+    },
+    "summary": "The internship in Switzerland is all about Wikidata, its design, and organization. I’m working on the generalization of the interfaces for Wikidata.",
+    "tags": {
+      "intern": "Intern"
+    },
+    "highlights": {
+      "1": "Applied Lean Organization and DevOps to Government",
+      "2": "Applied Continous Delivery and Agile Development concept to Government Team",
+      "3": "Generalize Wikidata information to a single abstract interface"
+    },
+    "action": {
+      "created": "2019-03-03T21:18:39.732115+07:00",
+      "updated": "2019-03-03T21:18:39.732147+07:00"
+    }
+  },
+  "th": {
+    "company": "ธนาคารกสิกรไทย"
+  }
+}

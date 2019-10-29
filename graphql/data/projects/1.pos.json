@@ -1,0 +1,32 @@
+{
+  "en": {
+    "id": 1,
+    "name": "Jewelry POS",
+    "sourcecode": "https://github.com/kamontat/OOP-FinalProject-ShoppingGUI",
+    "date": {
+      "start": "2015-12-01",
+      "end": "2016-06-16"
+    },
+    "summary": "I create a Java application to manage and sell jewelry. This project is group work in OOP II (Programming course). And later on, I refactor and update some of the code in the program.",
+    "highlights": {
+      "1": "Design POS application which runs by JVM",
+      "2": "Implemented system by following MVC architecture",
+      "3": "Supported application for both customer self-use and seller",
+      "4": "Implement a configurable database and products"
+    },
+    "gallery": {
+      "banner": "https://res.cloudinary.com/kamontat-net/image/upload/v1552988651/ulklnhz53kb9hzviusr1.png"
+    },
+    "tags": {
+      "java": "Java",
+      "app": "Application",
+      "sw": "Software",
+      "group": "Group",
+      "design": "Design"
+    },
+    "action": {
+      "created": "2019-03-17T17:09:33.383210+07:00",
+      "updated": "2019-03-19T16:44:10.499560+07:00"
+    }
+  }
+}

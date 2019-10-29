@@ -1,0 +1,36 @@
+{
+  "en": {
+    "id": 3,
+    "company": "Base Playhouse",
+    "position": "Full-Stack Developer",
+    "website": "http://baseplayhouse.co",
+    "date": {
+      "start": "2018-05-28",
+      "end": "2019-05-30"
+    },
+    "summary": "Create a full services e-commerce website.",
+    "tags": {
+      "jq": "JQuery",
+      "ws": "Website",
+      "infra": "Infra"
+    },
+    "highlights": {
+      "1": "Built E-Commerce website for offline courses",
+      "2": "Designed and implemented database schema",
+      "3": "Implemented on Docker which have autoscale (power by Kubernete)"
+    },
+    "gallery": {
+      "list": [
+        "https://res.cloudinary.com/kamontat-net/image/upload/v1551548459/vxvhi3qlzi834lrq8d2u.jpg",
+        "https://res.cloudinary.com/kamontat-net/image/upload/v1551548478/wdujpmaogj2f2fpc2hq2.png"
+      ]
+    },
+    "action": {
+      "created": "2019-03-03T00:41:24.865116+07:00",
+      "updated": "2019-03-03T21:04:02.058725+07:00"
+    }
+  },
+  "th": {
+    "summary": "สร้างเว็บไซต์อีคอมเมิร์ซบริการเต็มรูปแบบ"
+  }
+}

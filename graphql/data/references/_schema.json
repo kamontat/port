@@ -6,14 +6,24 @@
       "$id": "#reference",
       "type": "object",
       "properties": {
+        "referee": { "type": "string" },
+        "refereeLink": { "type": "string", "format": "uri-template" },
+        "attachment": { "type": "string", "format": "uri-template" },
+        "text": { "type": "string" },
+        "link": { "type": "string", "format": "uri-template" },
         "action": { "$ref": "data/definition#action" }
-      }
+      },
+      "oneOf": [
+        { "attachment": { "type": "string", "format": "uri-template" } },
+        { "text": { "type": "string" } },
+        { "link": { "type": "string", "format": "uri-template" } }
+      ]
     }
   },
   "type": "object",
   "properties": {
     "en": {
-      "allOf": [{ "$ref": "#reference" }, { "required": ["action"] }]
+      "allOf": [{ "$ref": "#reference" }, { "required": ["referee", "refereeLink", "action"] }]
     }
   },
   "additionalProperties": { "$ref": "#reference" },

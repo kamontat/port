@@ -1,0 +1,39 @@
+{
+  "en": {
+    "id": 6,
+    "company": "Agoda Services Co.,Ltd.",
+    "position": "Software Engineer",
+    "website": "https://agoda.com",
+    "date": {
+      "start": "2019-06-04"
+    },
+    "summary": "I'm working as a Backend developer who improves and enhances the performance of backend services.",
+    "tags": {
+      "sw": "Software",
+      "be": "Backend",
+      "scala": "Scala",
+      "zoo": "Zookeeper",
+      "kafka": "Kafka",
+      "mssql": "MSSQL"
+    },
+    "highlights": {
+      "1": "Reduced Tech debt on Affiliate team",
+      "2": "Improved CI/CD workflow"
+    },
+    "gallery": {
+      "banner": "https://res.cloudinary.com/kamontat-net/image/upload/v1560825626/pm47jz7wbdoarbotq9lw.jpg",
+      "list": [
+        "https://res.cloudinary.com/kamontat-net/image/upload/v1560825568/wkj1qun0age8sts8guij.jpg",
+        "https://res.cloudinary.com/kamontat-net/image/upload/v1560825614/hgdj1c2liwgmseyiff2i.jpg",
+        "https://res.cloudinary.com/kamontat-net/image/upload/v1569896845/jtc5joq8wt1lcnmfsi2m.jpg"
+      ]
+    },
+    "action": {
+      "created": "2019-06-18T09:40:24.863270+07:00",
+      "updated": "2019-10-01T09:29:35.918780+07:00"
+    }
+  },
+  "th": {
+    "company": "บริษัท อโกด้า จำกัด"
+  }
+}

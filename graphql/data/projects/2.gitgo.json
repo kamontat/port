@@ -1,0 +1,26 @@
+{
+  "en": {
+    "id": 1,
+    "name": "Gitgo",
+    "sourcecode": "https://github.com/kamontat/gitgo",
+    "date": {
+      "start": "2018-04-02"
+    },
+    "summary": "git commit creator for organize developer",
+    "highlights": {
+      "1": "Created commandline interface for commit formatting message to git",
+      "2": "Migrate with git-chglog to create customable release note",
+      "3": "Supported configuration for personalize commit message"
+    },
+    "tags": {
+      "cli": "Commandline interface",
+      "go": "Golang",
+      "sw": "Software",
+      "developer": "Developer"
+    },
+    "action": {
+      "created": "2019-10-29T16:37:02.591782+07:00",
+      "updated": "2019-10-29T16:37:02.718231+07:00"
+    }
+  }
+}

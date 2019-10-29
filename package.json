@@ -9,7 +9,8 @@
     "publish": "next build && next export",
     "ts-compiler": "ts-node --skip-project --compiler-options '{\"target\":\"es5\",\"moduleResolution\":\"node\",\"esModuleInterop\":true}' ",
     "validate": "yarn ts-compiler scripts/validate.ts",
-    "graphql": "yarn ts-compiler graphql.ts"
+    "graphql": "yarn ts-compiler graphql.ts",
+    "graphql:watch": "yarn nodemon"
   },
   "dependencies": {
     "next": "9.1.1",
@@ -22,6 +23,7 @@
     "ajv": "6.10.2",
     "apollo-server": "2.9.7",
     "graphql": "14.5.8",
+    "nodemon": "1.19.4",
     "ts-node": "8.4.1",
     "typescript": "3.6.4"
   }
