@@ -5,15 +5,15 @@ export class SkillLevel {
       basic: "Basic",
       intermediate: "Intermediate",
       advanced: "Advanced",
-      superior: "Superior"
+      superior: "Superior",
     },
     th: {
       beginner: "ระดับเริ่มต้น",
       basic: "ระดับพื้นฐาน",
       intermediate: "ระดับกลาง",
       advanced: "ระดับสูง",
-      superior: "ผู้เชี่ยวชาญ"
-    }
+      superior: "ผู้เชี่ยวชาญ",
+    },
   };
 
   constructor(private key: string) {}

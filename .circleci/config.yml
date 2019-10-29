@@ -24,22 +24,29 @@ orbs:
   codecov: codecov/codecov@1.0.5
   packtracker: packtracker/report@2.2.6
   sonarcloud: sonarsource/sonarcloud@1.0.0
-  cypress: cypress-io/cypress@1.11.0
 
 workflows:
   version: 2
   default:
     jobs:
+      - validate
       - lint
-      - test-unit
-      - cypress/run:
-          browser: electron
-          yarn: true
-          record: true
-          group: "all tests"
-          command: "yarn test:e2e --headless"
 
 jobs:
+  validate:
+    executor: node12
+    steps:
+      - checkout
+      - info
+      - node/with-cache:
+          dir: node_modules
+          steps:
+            - run:
+                name: Install all dependencies
+                command: yarn install
+      - run:
+          name: Start validate JSON data files
+          command: yarn validate
   lint:
     executor: node12
     steps:
@@ -53,18 +60,4 @@ jobs:
                 command: yarn install
       - run:
           name: Start check lint via ESlint
-          command: yarn lint --no-fix
-  test-unit:
-    executor: node12
-    steps:
-      - checkout
-      - info
-      - node/with-cache:
-          dir: node_modules
-          steps:
-            - run:
-                name: Install all dependencies
-                command: yarn install
-      - run:
-          name: Start unit test
-          command: yarn test:unit
+          command: yarn lint

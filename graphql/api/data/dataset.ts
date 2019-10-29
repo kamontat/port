@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { resolve } from "path";
 import { requireAll, updateAllLanguages, generateAllLanguages, getTranslate } from "./_generic";
 import { skillLevelToString } from "./translate";
@@ -39,7 +41,7 @@ export class Dataset {
       languages: this.data.languages.map(l => getTranslate(l, lang)),
       interests: this.data.interests.map(i => getTranslate(i, lang)),
       works: this.data.works.map(w => getTranslate(w, lang)),
-      skills: this.data.skills.map(s => getTranslate(s, lang))
+      skills: this.data.skills.map(s => getTranslate(s, lang)),
     };
   }
 
@@ -103,3 +105,5 @@ export class Dataset {
     return obj ? Object.values(obj) : [];
   }
 }
+
+/* eslint-enable */

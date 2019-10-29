@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { resolve } from "path";
 import { readdirSync as dir } from "fs";
 
@@ -38,3 +40,5 @@ export const updateAllLanguages = (obj: any, transform: (obj: any, lang: string)
 export const getTranslate = (obj: any, lang: string) => {
   return obj[lang] ? obj[lang] : obj["en"];
 };
+
+/* eslint-enable @typescript-eslint/no-explicit-any */

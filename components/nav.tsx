@@ -5,7 +5,7 @@ type Links = { href: string; label: string; key: string };
 
 const links = [
   { href: "https://zeit.co/now", label: "ZEIT" },
-  { href: "https://github.com/zeit/next.js", label: "GitHub" }
+  { href: "https://github.com/zeit/next.js", label: "GitHub" },
 ].map((link: Links) => {
   link.key = `nav-link-${link.href}-${link.label}`;
   return link;

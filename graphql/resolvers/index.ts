@@ -5,6 +5,6 @@ dataset.loadAll();
 
 export default {
   Query: {
-    information: (_root, args) => dataset.graphql(args.lang)
-  }
+    information: (_root, args) => dataset.graphql(args.lang),
+  },
 };

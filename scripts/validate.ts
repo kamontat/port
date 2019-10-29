@@ -6,7 +6,7 @@ import Validation from "./validate/index";
 
 const ajv = new Ajv({
   allErrors: true,
-  format: "full"
+  format: "full",
 }); // options can be passed, e.g. {allErrors: true}
 
 const schemaFilename = "_schema.json";
