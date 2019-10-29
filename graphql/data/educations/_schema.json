@@ -22,13 +22,7 @@
             "phd"
           ]
         },
-        "date": {
-          "type": "object",
-          "anyOf": [
-            { "start": { "type": "string", "format": "date" } },
-            { "end": { "type": "string", "format": "date" } }
-          ]
-        },
+        "date": { "$ref": "data/definition#start-end-date" },
         "evaluate": {
           "oneOf": [{ "type": "string", "const": "pass" }, { "type": "number", "multipleOf": 0.01 }]
         },

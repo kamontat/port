@@ -9,13 +9,7 @@
         "company": { "type": "string" },
         "position": { "type": "string" },
         "website": { "type": "string", "format": "uri-template" },
-        "date": {
-          "type": "object",
-          "anyOf": [
-            { "start": { "type": "string", "format": "date" } },
-            { "end": { "type": "string", "format": "date" } }
-          ]
-        },
+        "date": { "$ref": "data/definition#start-end-date" },
         "summary": {
           "type": "string",
           "maxLength": 200
@@ -24,9 +18,9 @@
           "type": "string"
         },
         "tags": { "$ref": "data/definition#tags" },
+        "highlights": { "$ref": "data/definition#highlights" },
         "gallery": { "$ref": "data/definition#gallery" },
-        "action": { "$ref": "data/definition#action" },
-        "highlights": { "$ref": "data/definition#highlights" }
+        "action": { "$ref": "data/definition#action" }
       },
       "additionalProperties": false
     }

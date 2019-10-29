@@ -6,14 +6,19 @@
       "$id": "#skill",
       "type": "object",
       "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "level": { "type": "string", "enum": ["beginner", "basic", "intermediate", "advanced", "superior"] },
+        "tags": { "$ref": "data/definition#tags" },
         "action": { "$ref": "data/definition#action" }
-      }
+      },
+      "additionalProperties": false
     }
   },
   "type": "object",
   "properties": {
     "en": {
-      "allOf": [{ "$ref": "#skill" }, { "required": ["action"] }]
+      "allOf": [{ "$ref": "#skill" }, { "required": ["name", "description", "level", "action"] }]
     }
   },
   "additionalProperties": { "$ref": "#skill" },

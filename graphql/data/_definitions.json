@@ -48,6 +48,11 @@
         "^[0-9]+$": { "type": "string", "minLength": 15, "maxLength": 70 }
       },
       "minProperties": 1
+    },
+    "start-end-date": {
+      "$id": "#start-end-date",
+      "type": "object",
+      "anyOf": [{ "start": { "type": "string", "format": "date" } }, { "end": { "type": "string", "format": "date" } }]
     }
   }
 }

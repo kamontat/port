@@ -1,0 +1,17 @@
+{
+  "en": {
+    "name": "Communication",
+    "description": "How to communicate between non-technical user",
+    "level": "intermediate",
+    "tags": {
+      "ss": "Soft Skill"
+    },
+    "action": {
+      "created": "2019-03-02T19:06:40.748637+07:00",
+      "updated": "2019-03-02T19:06:40.748674+07:00"
+    }
+  },
+  "th": {
+    "name": "การสื่อสาร"
+  }
+}

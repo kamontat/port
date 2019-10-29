@@ -6,14 +6,21 @@
       "$id": "#volunteer",
       "type": "object",
       "properties": {
+        "organization": { "type": "string" },
+        "position": { "type": "string" },
+        "website": { "type": "string", "format": "uri-template" },
+        "gallery": { "$ref": "data/definition#gallery" },
+        "tags": { "$ref": "data/definition#tags" },
+        "highlights": { "$ref": "data/definition#highlights" },
         "action": { "$ref": "data/definition#action" }
-      }
+      },
+      "additionalProperties": false
     }
   },
   "type": "object",
   "properties": {
     "en": {
-      "allOf": [{ "$ref": "#volunteer" }, { "required": ["action"] }]
+      "allOf": [{ "$ref": "#volunteer" }, { "required": ["organization", "position", "action"] }]
     }
   },
   "additionalProperties": { "$ref": "#volunteer" },

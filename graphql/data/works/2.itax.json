@@ -1,0 +1,33 @@
+{
+  "en": {
+    "id": 2,
+    "company": "iTax Inc.",
+    "position": "Mobile Developer",
+    "website": "https://www.itax.in.th",
+    "date": {
+      "start": "2017-06-01",
+      "end": "2017-07-17"
+    },
+    "tags": {
+      "android": "Android",
+      "sw": "Software",
+      "java": "Java",
+      "sql": "SQL"
+    },
+    "summary": "Focusing on refactor and improve code quality. The second target is to implement testing and helper for future development.",
+    "highlights": {
+      "1": "Refactored code and optimized Android Application",
+      "2": "Wrote unit test, integration test, and UI test",
+      "3": "Updated database design and schema"
+    },
+    "action": {
+      "created": "2019-03-03T21:02:43.777073+07:00",
+      "updated": "2019-03-23T22:10:15.024291+07:00"
+    }
+  },
+  "th": {
+    "highlights": {
+      "1": "แก้ไขโค๊ตบางส่วนเพื่อเพิ่มประสิทธิภาพในการทำงานของแอพพลิเคชั่นในแอนดรอยด์"
+    }
+  }
+}

@@ -6,6 +6,8 @@ import Information from "./information";
 import Language from "./language";
 import Interest from "./interest";
 import Work from "./work";
+import Skill from "./skill";
+import Volunteer from "./volunteer";
 
 const Query = gql`
   type Query {
@@ -13,7 +15,7 @@ const Query = gql`
   }
 `;
 
-const obj = { Definitions, Language, Interest, Work, Information, Query };
+const obj = { Definitions, Language, Interest, Work, Skill, Volunteer, Information, Query };
 const array = Object.values(obj);
 
 export default array;

@@ -43,6 +43,8 @@ export default gql`
     languages: [Language]
     interests: [Interest]
     works: [Work]
+    skills: [Skill]
+    volunteers: [Volunteer]
     action: Action!
   }
 `;

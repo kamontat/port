@@ -1,0 +1,19 @@
+{
+  "en": {
+    "name": "Agile",
+    "description": "Software development",
+    "level": "intermediate",
+    "tags": {
+      "sw": "Software",
+      "pc": "Process"
+    },
+    "action": {
+      "created": "2019-03-14T19:48:18.067196+07:00",
+      "updated": "2019-03-14T19:48:18.067261+07:00"
+    }
+  },
+  "th": {
+    "name": "เอจายล์",
+    "description": "การพัฒนาซอฟต์แวร์"
+  }
+}

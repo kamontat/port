@@ -27,10 +27,10 @@ export const requireAll = (path: string) => {
     .filter(v => v !== undefined);
 };
 
-export const updateAllLanguages = (obj: any, transform: (obj: any) => any) => {
+export const updateAllLanguages = (obj: any, transform: (obj: any, lang: string) => any) => {
   const langs = Object.keys(obj);
   return langs.reduce((p, lang) => {
-    p[lang] = transform(p[lang]);
+    p[lang] = transform(p[lang], lang);
     return p;
   }, obj);
 };
