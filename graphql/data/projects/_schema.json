@@ -29,7 +29,7 @@
       "allOf": [
         { "$ref": "#project" },
         {
-          "required": ["id", "name", "action"]
+          "required": ["id", "name", "summary", "action"]
         }
       ]
     }

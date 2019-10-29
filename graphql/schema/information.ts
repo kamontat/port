@@ -42,9 +42,12 @@ export default gql`
     socials: [SocialElement]
     languages: [Language]
     interests: [Interest]
+    projects: [Project]
     works: [Work]
     skills: [Skill]
     volunteers: [Volunteer]
+    educations: [Education]
+    references: [Reference]
     action: Action!
   }
 `;
