@@ -24,6 +24,8 @@ commit:
       value: helper script
     - type: test
       value: Relevant to ava testing framework
+    - type: dataset
+      value: graphql/data relevant
     - type: ci
       value: CI/CD setup
     - type: deps
