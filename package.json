@@ -14,7 +14,11 @@
     "graphql:watch": "yarn nodemon"
   },
   "dependencies": {
+    "@mdx-js/loader": "1.5.1",
+    "@next/mdx": "9.1.1",
+    "@zeit/next-sass": "1.0.1",
     "next": "9.1.1",
+    "node-sass": "4.13.0",
     "react": "16.11.0",
     "react-dom": "16.11.0"
   },
