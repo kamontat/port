@@ -23,7 +23,7 @@
     "react-dom": "16.12.0"
   },
   "devDependencies": {
-    "@types/node": "12.12.22",
+    "@types/node": "12.12.24",
     "@types/react": "16.9.17",
     "@typescript-eslint/eslint-plugin": "2.14.0",
     "@typescript-eslint/parser": "2.14.0",
