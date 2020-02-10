@@ -25,8 +25,8 @@
   "devDependencies": {
     "@types/node": "12.12.26",
     "@types/react": "16.9.19",
-    "@typescript-eslint/eslint-plugin": "2.19.0",
-    "@typescript-eslint/parser": "2.19.0",
+    "@typescript-eslint/eslint-plugin": "2.19.2",
+    "@typescript-eslint/parser": "2.19.2",
     "ajv": "6.11.0",
     "apollo-server": "2.10.0",
     "eslint": "6.8.0",
